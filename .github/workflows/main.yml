@@ -14,7 +14,7 @@ on:
       - '**/*.swift'
 
 jobs:
-  Build&Test:
+  Test:
     runs-on: macos-latest
     steps:
     - name: Checkout Project
