@@ -24,7 +24,7 @@ jobs:
       run: xcode-select -p
 
     - name: build and test
-      run: xcodebuild clean test -project MeetingBar.xcproject -scheme MeetingBar -destination 'platform=macOS' -showBuildTimingSummary
+      run: xcodebuild clean test -project MeetingBar.xcodeproj -scheme MeetingBar -destination 'platform=macOS' -showBuildTimingSummary
 
   SwiftLint:
     runs-on: ubuntu-latest
