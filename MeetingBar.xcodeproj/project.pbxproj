@@ -14,6 +14,7 @@
 		140D843D2493B7BF0055E1CE /* EventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D843C2493B7BF0055E1CE /* EventStore.swift */; };
 		140D843F2493B7CB0055E1CE /* DefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D843E2493B7CB0055E1CE /* DefaultsKeys.swift */; };
 		140D84412493B8030055E1CE /* KeyboardShortcutsNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D84402493B8030055E1CE /* KeyboardShortcutsNames.swift */; };
+		14210564251A6C2D00DA94BD /* MeetingBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14210563251A6C2D00DA94BD /* MeetingBarTests.swift */; };
 		144C017D2462D0C3000C9FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144C017C2462D0C3000C9FFC /* AppDelegate.swift */; };
 		144C01812462D0C5000C9FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144C01802462D0C5000C9FFC /* Assets.xcassets */; };
 		144C01842462D0C5000C9FFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 144C01832462D0C5000C9FFC /* Preview Assets.xcassets */; };
@@ -27,6 +28,16 @@
 		40DC7054250E5E1000217DD9 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40DC7053250E5E1000217DD9 /* ServiceManagement.framework */; };
 		40E60313250E81EA005986C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E60312250E81EA005986C7 /* main.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14210566251A6C2D00DA94BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 144C01712462D0C3000C9FFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 144C01782462D0C3000C9FFC;
+			remoteInfo = MeetingBar;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		40DC7050250E5D8D00217DD9 /* CopyFiles */ = {
@@ -49,6 +60,9 @@
 		140D843E2493B7CB0055E1CE /* DefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeys.swift; sourceTree = "<group>"; };
 		140D84402493B8030055E1CE /* KeyboardShortcutsNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcutsNames.swift; sourceTree = "<group>"; };
 		14158D3A246C65AD0006436C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		14210561251A6C2D00DA94BD /* MeetingBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetingBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		14210563251A6C2D00DA94BD /* MeetingBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingBarTests.swift; sourceTree = "<group>"; };
+		14210565251A6C2D00DA94BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		144C01792462D0C3000C9FFC /* MeetingBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetingBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		144C017C2462D0C3000C9FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		144C01802462D0C5000C9FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +82,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1421055E251A6C2D00DA94BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		144C01762462D0C3000C9FFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,12 +119,22 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		14210562251A6C2D00DA94BD /* MeetingBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				14210563251A6C2D00DA94BD /* MeetingBarTests.swift */,
+				14210565251A6C2D00DA94BD /* Info.plist */,
+			);
+			path = MeetingBarTests;
+			sourceTree = "<group>";
+		};
 		144C01702462D0C3000C9FFC = {
 			isa = PBXGroup;
 			children = (
 				14158D3A246C65AD0006436C /* README.md */,
 				144C017B2462D0C3000C9FFC /* MeetingBar */,
 				40DC7041250E5B9C00217DD9 /* AutoLauncher */,
+				14210562251A6C2D00DA94BD /* MeetingBarTests */,
 				144C017A2462D0C3000C9FFC /* Products */,
 				40DC7052250E5E1000217DD9 /* Frameworks */,
 			);
@@ -114,6 +145,7 @@
 			children = (
 				144C01792462D0C3000C9FFC /* MeetingBar.app */,
 				40DC7040250E5B9C00217DD9 /* AutoLauncher.app */,
+				14210561251A6C2D00DA94BD /* MeetingBarTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +200,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		14210560251A6C2D00DA94BD /* MeetingBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14210568251A6C2D00DA94BD /* Build configuration list for PBXNativeTarget "MeetingBarTests" */;
+			buildPhases = (
+				1421055D251A6C2D00DA94BD /* Sources */,
+				1421055E251A6C2D00DA94BD /* Frameworks */,
+				1421055F251A6C2D00DA94BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14210567251A6C2D00DA94BD /* PBXTargetDependency */,
+			);
+			name = MeetingBarTests;
+			productName = MeetingBarTests;
+			productReference = 14210561251A6C2D00DA94BD /* MeetingBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		144C01782462D0C3000C9FFC /* MeetingBar */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 144C018C2462D0C5000C9FFC /* Build configuration list for PBXNativeTarget "MeetingBar" */;
@@ -214,10 +264,14 @@
 		144C01712462D0C3000C9FFC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Andrii Leitsius";
 				TargetAttributes = {
+					14210560251A6C2D00DA94BD = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 144C01782462D0C3000C9FFC;
+					};
 					144C01782462D0C3000C9FFC = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -245,11 +299,19 @@
 			targets = (
 				144C01782462D0C3000C9FFC /* MeetingBar */,
 				40DC703F250E5B9C00217DD9 /* AutoLauncher */,
+				14210560251A6C2D00DA94BD /* MeetingBarTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1421055F251A6C2D00DA94BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		144C01772462D0C3000C9FFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +353,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1421055D251A6C2D00DA94BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14210564251A6C2D00DA94BD /* MeetingBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		144C01752462D0C3000C9FFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,6 +389,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		14210567251A6C2D00DA94BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 144C01782462D0C3000C9FFC /* MeetingBar */;
+			targetProxy = 14210566251A6C2D00DA94BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		144C01852462D0C5000C9FFC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -331,6 +409,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		14210569251A6C2D00DA94BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KGH289N6T8;
+				INFOPLIST_FILE = MeetingBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leitsMeetingBar.MeetingBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetingBar.app/Contents/MacOS/MeetingBar";
+			};
+			name = Debug;
+		};
+		1421056A251A6C2D00DA94BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = KGH289N6T8;
+				INFOPLIST_FILE = MeetingBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = leitsMeetingBar.MeetingBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MeetingBar.app/Contents/MacOS/MeetingBar";
+			};
+			name = Release;
+		};
 		144C018A2462D0C5000C9FFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -554,6 +672,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		14210568251A6C2D00DA94BD /* Build configuration list for PBXNativeTarget "MeetingBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14210569251A6C2D00DA94BD /* Debug */,
+				1421056A251A6C2D00DA94BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		144C01742462D0C3000C9FFC /* Build configuration list for PBXProject "MeetingBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

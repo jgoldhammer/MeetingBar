@@ -7,27 +7,27 @@
 //
 
 import XCTest
+@testable import MeetingBar
 
-class MeetingBarTests: XCTestCase {
+class HelpersTests: XCTestCase {
+    func testGetMatch() throws {
+        let regex = try! NSRegularExpression(pattern: #"v\d"#)
+        var result: String?
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        result = getMatch(text: "Lore v2 ipsum", regex: regex)
+        XCTAssertEqual(result, "v2")
+
+        result = getMatch(text: "Lore ipsum", regex: regex)
+        XCTAssertNil(result)
+
+        result = getMatch(text: "Lore v3 v4 v5 ipsum", regex: regex)
+        XCTAssertEqual(result, "v3")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    func testGetRegexForService() throws {
+        var result: NSRegularExpression?
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        result = getRegexForService(MeetingServices.zoom)
+        XCTAssertEqual(result, LinksRegex().zoom)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
