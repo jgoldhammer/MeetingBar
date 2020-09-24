@@ -14,6 +14,18 @@ on:
       - '**/*.swift'
 
 jobs:
+  Build&Test:
+    runs-on: macos-latest
+    steps:
+    - name: Checkout Project
+      uses: actions/checkout@v1
+
+    - name: Show the currently detailed version of Xcode for CLI
+      run: xcode-select -p
+
+    - name: build and test
+      run: xcodebuild clean test -project MeetingBar.xcproject -scheme MeetingBar -destination 'platform=macOS' -showBuildTimingSummary
+
   SwiftLint:
     runs-on: ubuntu-latest
     steps:
