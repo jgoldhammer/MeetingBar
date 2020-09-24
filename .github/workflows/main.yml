@@ -4,12 +4,12 @@ name: Lint, build and test
 on:
   push:
     paths:
-      - '.github/workflows/swiftlint.yml'
+      - '.github/workflows/main.yml'
       - '.swiftlint.yml'
       - '**/*.swift'
   pull_request:
     paths:
-      - '.github/workflows/swiftlint.yml'
+      - '.github/workflows/main.yml'
       - '.swiftlint.yml'
       - '**/*.swift'
 
