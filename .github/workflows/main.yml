@@ -1,17 +1,7 @@
 # This is a basic workflow to help you get started with Actions
 name: Lint, build and test
 
-on:
-  push:
-    paths:
-      - '.github/workflows/main.yml'
-      - '.swiftlint.yml'
-      - '**/*.swift'
-  pull_request:
-    paths:
-      - '.github/workflows/main.yml'
-      - '.swiftlint.yml'
-      - '**/*.swift'
+on: [push, pull_request]
 
 jobs:
   Test:
